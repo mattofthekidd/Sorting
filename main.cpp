@@ -1,10 +1,17 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include <chrono>
-#include <algorithm>
 
 #include "SortMe.h"
+
+template <typename T>
+void bubbleSort(std::vector<T> &aList);
+
+template <typename T>
+void selectionSort(std::vector<T> &aList);
+
+template<typename T>
+void print(std::vector<T> aList);
 
 void makeVector(std::vector<int>& x) {
     if(x.size() > 0) {
